@@ -1,0 +1,57 @@
+<form action="/pegina-processa-dados-du-form" method="post">
+    <fieldset>
+        <legend>Dados Gerais</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" minlength="3" id="nome" required />
+		
+        <label for="data_nascimento">Data de Nascimento:</Label>
+         <input type="text" id="data nascimento" required />
+		 
+        <label for="cpf">CPF:</label>
+        <input type="cpf" minlength="11" maxlength="11" id="cpf"
+		    placeholder="123456789-12" required />
+			
+		<label for="tel">Telefone Cel:</label>
+		<input type="tel" minlength="10" maxlength="13" id="tel" placeholder="12-12345-1234" 
+		pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required />
+    </fieldset>
+	
+    <fieldset>
+        <legend>Endereço</legend>
+        <label for="tipo_endereco">	Tipo:<label>
+        <select id="tipo_endereco">
+            <option value="">Selecione</option>
+             <option value="">Rua</option>
+             <option value="">Estrada</option>
+            <option value="">Rodovia</option>
+            <option value="">Outros</option>
+        </select>
+         <label for="logradouro_endereco">Logradouro:</label>
+         <input type="text" id="logradouro_endereco" />
+		 
+         <label for="numero_endereco">Número:</label>
+         <input type="text" id="numero_endereco"/>
+		 
+        <label for="complemento_endereco">Complemento:</label>
+        <input type="text" id="complesento_endereco" />
+     </fieldset>
+	 
+     <fieldset>
+        <legend>Fale Conosco</legend>
+		
+		<label for="tipo_msg">Tipo de Mensagem:</label>
+		<label for="Sugestao">Sugestao:</label>
+		<input type="radio" name="tipo_msg" value="Sugestao" />
+		<label for="Critica">Critica:</label>
+		<input type="radio" name="tipo_msg" value="Critica" />
+		<label for="Elogio">Elogio:</label>
+		<input type="radio" name="tipo_msg" value="Elogio" />
+		<label for="msg">Mensagem:</label>
+        <textarea type="text" id="mgs"></textarea>
+     </fieldset>
+	 
+    <fieldset>
+         <button type="submit">Enviar sua mensagen</button>
+         <button type="reset">Limpar o Formuláriac</button>
+    </fieldset>
+</form>
